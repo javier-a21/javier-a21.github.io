@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 ul.barnav {
     list-style-type: none;
     margin: 0;
@@ -5,30 +8,75 @@ ul.barnav {
     overflow: hidden;
     background-color: #884f26;
 }
-ul.barnav li {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    border: solid red 2px;
-    
 
-} 
-ul.barnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #884f26;
+ul.barnav li {
+    float: left;
 }
-ul.barnav li {
+
+ul.barnav li a {
     float: right;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     border: solid red 2px;
-    
+    height: 12.5%;
+    width: 50px;
+    text-decoration: none;
 
-} 
+}
+
+
+
+ul.barnav li a:hover:not(.active) {
+    background-color: #c27e4d;
+}
+
+ul.barnav li a.active {
+    background-color: #632f0a;
+}
+
+ul.barnav li .logo{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    ul.barnav li .logo, 
+    ul.barnav li {float: none;}
+  }
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+  body {margin: 0;}
+
+ul.topnav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
