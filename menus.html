@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            margin: 0;
+        }
+
         .header { grid-area: header; }
         .menu1 { grid-area: menu1; }
         .menu2 { grid-area: menu2; }
@@ -11,22 +15,36 @@
         .footer { grid-area: footer; }
 
         .grid-container {
-        display: grid;
-        grid-template-areas:
-            'header header header header header header'
-            'menu1 menu1 menu2 menu2 menu3 menu3'
-            'footer footer footer footer footer footer';
-        gap: 10px;
-        background-color: #2196F3;
-        padding: 10px;
-    
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu1 menu1 menu1 menu1 menu1 menu1'
+                'menu2 menu2 menu2 menu2 menu2 menu2'
+                'menu3 menu3 menu3 menu3 menu3 menu3'
+                'footer footer footer footer footer footer';
+            grid-template-rows: 7vh 28vh 28vh 28vh 7vh; /* Utilizamos vh directamente */
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
         }
 
         .grid-container > div {
-        background-color: rgba(255, 255, 255, 0.8);
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 1px solid #ccc; /* Añade un borde para mostrar el grid */
+        }
+        @media screen and (min-width: 1025px) {
+            .grid-container {
+                grid-template-areas:
+                    'header header header header header header'
+                    'menu1 menu1 menu2 menu2 menu3 menu3'
+                    'footer footer footer footer footer footer';
+                grid-template-rows: 7vh 86vh 7vh; /* Utilizamos vh directamente */
+
+            }
         }
     </style>
     <title>Document</title>
@@ -38,6 +56,6 @@
         <div class="menu2">Menu2</div>  
         <div class="menu3">Menu3</div>
         <div class="footer">Pie de Pagina</div>
-      </div>
+    </div>
 </body>
 </html>
