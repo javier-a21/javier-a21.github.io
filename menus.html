@@ -18,13 +18,15 @@
             display: grid;
             grid-template-areas:
                 'header header header header header header'
-                'menu1 menu1 menu2 menu2 menu3 menu3'
+                'menu1 menu1 menu1 menu1 menu1 menu1'
+                'menu2 menu2 menu2 menu2 menu2 menu2'
+                'menu3 menu3 menu3 menu3 menu3 menu3'
                 'footer footer footer footer footer footer';
+            grid-template-rows: 7vh 28vh 28vh 28vh 7vh; /* Utilizamos vh directamente */
             gap: 10px;
             background-color: #2196F3;
             padding: 10px;
             grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-            grid-template-rows: 10vh 80vh 10vh; /* Utilizamos vh directamente */
         }
 
         .grid-container > div {
@@ -33,6 +35,16 @@
             padding: 20px 0;
             font-size: 30px;
             border: 1px solid #ccc; /* Añade un borde para mostrar el grid */
+        }
+        @media screen and (min-width: 1025px) {
+            .grid-container {
+                grid-template-areas:
+                    'header header header header header header'
+                    'menu1 menu1 menu2 menu2 menu3 menu3'
+                    'footer footer footer footer footer footer';
+                grid-template-rows: 7vh 86vh 7vh; /* Utilizamos vh directamente */
+
+            }
         }
     </style>
     <title>Document</title>
