@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        footer {
-            background-color: #777;
-            padding: 10px;
-            text-align: center;
-            color: white;
+        .header { grid-area: header; }
+        .menu1 { grid-area: menu1; }
+        .menu2 { grid-area: menu2; }
+        .menu3 { grid-area: menu3; }
+        .footer { grid-area: footer; }
+
+        .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu1 menu1 menu2 menu2 menu3 menu3'
+            'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    
+        }
+
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-
-    <footer>
-        <p>Pie de pagina</p>
-    </footer>
+    <div class="grid-container">
+        <div class="header">Menu</div>
+        <div class="menu1">Menu1</div>
+        <div class="menu2">Menu2</div>  
+        <div class="menu3">Menu3</div>
+        <div class="footer">Pie de Pagina</div>
+      </div>
 </body>
 </html>

@@ -1,7 +1,34 @@
-#imgR{
-    width: 300px;
-    border: 1px solid red;
+ul.barnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #884f26;
 }
-#f{
+ul.barnav li {
+    float: right;
+    display: block;
+    color: white;
     text-align: center;
+    padding: 14px 16px;
+    border: solid red 2px;
+    
+
+} 
+ul.barnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #884f26;
 }
+ul.barnav li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border: solid red 2px;
+    
+
+} 
