@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/formulario.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="index.html">
-    <label for="name">Nombre y Apellidos</label>
-    <input type="text" id="name" name="nombre"/>
-    <label for="telef">Teléfono</label>
-    <input type="text" id="telef" name="Telefono"/>
-    <label for="Fecha">Fecha</label>
-    <input type="text" id="Fecha" name="Fecha"/>
-    <label for="comensales">Numero de comensales</label>
-    <input type="text" id="comensales" name="nComensales"/>
-    <label for="comentarios">Comentarios</label>
-    <textarea id="comentarios" name="comentarios" rows="10" cols="20"></textarea>
+
+    <form action="index.html"></form>
+    <div class="flex-container">
+        <div>
+
+        <ul>
+            <li>
+                <label for="name">Nombre y Apellidos</label>
+                <input type="text" id="name" name="nombre"/>
+            </li>
+        
     
-    <input type="submit" value="Finalizar reserva"/>
-    <img src="imgs/reserva-mesa.jpg"" alt="">
+        <li>
+            <label for="telef">Teléfono</label>
+            <input type="text" id="telef" name="Telefono"/>
+        </li>
+    
+    
+        <li>
+            <label for="Fecha">Fecha</label>
+            <input type="text" id="Fecha" name="Fecha"/>
+        </li>
+    
+   
+         <li>
+             <label for="comensales">Numero de comensales</label>
+                     <input type="text" id="comensales" name="nComensales"/>
+         </li>
+    
+   
+    <li>
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" name="comentarios" rows="10" cols="20"></textarea>
+    </li>
+   
+    <div class="foto">
+        <input type="submit" value="Finalizar reserva"/>
+        <img src="imgs/reserva-mesa.jpg" alt="">
+    </div>
+</ul>
+        
+</div>
+</div>
+
     </form>
     
 </body>
