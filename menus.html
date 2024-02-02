@@ -3,48 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/grid.css">
     <style>
-        body {
-            margin: 0;
+        table {
+            border: 1px solid black;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
 
-        .header { grid-area: header; }
-        .menu1 { grid-area: menu1; }
-        .menu2 { grid-area: menu2; }
-        .menu3 { grid-area: menu3; }
-        .footer { grid-area: footer; }
-
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                'header header header header header header'
-                'menu1 menu1 menu1 menu1 menu1 menu1'
-                'menu2 menu2 menu2 menu2 menu2 menu2'
-                'menu3 menu3 menu3 menu3 menu3 menu3'
-                'footer footer footer footer footer footer';
-            grid-template-rows: 7vh 28vh 28vh 28vh 7vh; /* Utilizamos vh directamente */
-            gap: 10px;
-            background-color: #2196F3;
-            padding: 10px;
-            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        td{
+            border: 1px solid black;
+            text-align: left;
+            padding: 20px;
         }
 
-        .grid-container > div {
-            background-color: rgba(255, 255, 255, 0.8);
+        th {
+            border: 1px solid black;
             text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
-            border: 1px solid #ccc; /* Añade un borde para mostrar el grid */
-        }
-        @media screen and (min-width: 1025px) {
-            .grid-container {
-                grid-template-areas:
-                    'header header header header header header'
-                    'menu1 menu1 menu2 menu2 menu3 menu3'
-                    'footer footer footer footer footer footer';
-                grid-template-rows: 7vh 86vh 7vh; /* Utilizamos vh directamente */
-
-            }
+            padding: 20px;
         }
     </style>
     <title>Document</title>
@@ -52,9 +29,345 @@
 <body>
     <div class="grid-container">
         <div class="header">Menu</div>
-        <div class="menu1">Menu1</div>
-        <div class="menu2">Menu2</div>  
-        <div class="menu3">Menu3</div>
+        <div class="menu1">
+            <table>
+                <tr>
+                    <td></td>
+                    <th colspan="3">CARTA</th>
+                </tr> 
+                <tr>
+                    <td></td>
+                    <th colspan="3">VERDURAS Y HORTALIZAS</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td colspan="2">Ensalada de burrata, nueces, aceite de albahaca y cherrys.</td>
+                    <td>16.00€</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td colspan="2">Ensalada de foie micuit, hamón de pato, manzana y cebolla crispy.</td>
+                    <td>16.00€</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td colspan="2">Ensalada de ventresca de atún, pimientos de cristal y vinagreta de piparras.</td>
+                    <td>16.00€</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td colspan="2">Alcachofas salteadas, velo de papada ibérica y refrito de ajos.</td>
+                    <td>18.00€</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td colspan="2">Cecina premium, almendras laminadas y aceite de Artajo.</td>
+                    <td>18.00€</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td colspan="2">Tempura de verduras y langostinos, alioli de patata y salsa romescu.</td>
+                    <td>17.00€</td>
+                </tr> 
+                <tr>
+                    <td></td>
+                    <th colspan="3">MEDITERRÁNEO</th>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td colspan="2">Jamón ibérico de recebo, acompaññado de pan rústico y tomate triturado.</td>
+                    <td>21.00€</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td colspan="2">Croquetas cremosas de jamón ibérico.</td>
+                    <td>15.00€</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td colspan="2">Tartar de atún picante Balfego, aguacate, dados de tomate y mostaza.</td>
+                    <td>20.00€</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td colspan="2">Linguinis salteados con gambón, calabacin y cherrys.</td>
+                    <td> 17.00€</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td colspan="2">Arroz negro de chipirones plancha y alioli de finas hierbas.</td>
+                    <td>18.00€</td>
+                </tr> 
+                <tr>
+                    <td></td>
+                    <th colspan="3">MAR</th>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td colspan="2">Chipirones a la plancha, mojo de pimientos y refrito de Módena</td>
+                    <td>19.00€</td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td colspan="2">Buñuelos de bacalao con salsa sriracha.</td>
+                    <td>17.00€</td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="menu2">
+            <table>
+                <tr>
+                    <td></td>
+                    <th colspan="3">MENU DEL DÍA</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td colspan="2">gdaksjhdjkadka</td>
+                    <td> 16.00€</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>  
+        <div class="menu3">
+            <table>
+                <tr>
+                    <td></td>
+                    <th colspan="3">MENU FIN DE SEMANA</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td colspan="2">gdaksjhdjkadka</td>
+                    <td> 16.00€</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
         <div class="footer">Pie de Pagina</div>
     </div>
 </body>
