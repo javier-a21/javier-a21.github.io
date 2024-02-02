@@ -3,19 +3,23 @@
 }
 
 .flex-container{ 
-    background-color: #f1f1f1;
-    width: 300px;
-    margin: 10px;
-    text-align: left;
-    line-height: 75px;
-    font-size: 30px;
+  background-color: #f1f1f1;
+  font-size: 30px;
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
 }
 .row::after {
     content: "";
     clear: both;
     display: table;
   }
-  foto{
-     
+  .img_container{
+    width: 75%;
+  
+    float: left;
+    padding: 15px;
+    border: 1px solid red
+    
   }
-
