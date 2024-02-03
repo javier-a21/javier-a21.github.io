@@ -2,56 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/formulario.css">
     <title>Document</title>
 </head>
 <body>
-
-    <form action="index.html"></form>
-    <div class="flex-container">
-        <div>
-
-        <ul>
-            <li>
-                <label for="name">Nombre y Apellidos</label><br/>
-                <input type="text" id="name" name="nombre"/>
-            </li>
-        
-    
-        <li>
-            <label for="telef">Teléfono</label><br/>
-            <input type="text" id="telef" name="Telefono"/>
-        </li>
-    
-    
-        <li>
-            <label for="Fecha">Fecha</label><br/>
-            <input type="text" id="Fecha" name="Fecha"/>
-        </li>
-    
-   
-         <li>
-             <label for="comensales">Numero de comensales</label><br/>
-                     <input type="text" id="comensales" name="nComensales"/>
-         </li>
-    
-   
-    <li>
-        <label for="comentarios">Comentarios</label><br/>
-        <textarea id="comentarios" name="comentarios" rows="10" cols="20"></textarea>
-    </li>
-    <li> <input type="submit" value="Finalizar reserva"/></li>
-   
-    
-</ul>
-        
-</div>
-</div>
-<div class="img_container">
-        <img src="imgs/reserva-mesa.jpg" alt="">
-    </div>
-    </form>
-    
+    <body>
+        <div class="wrapper">
+          <div class="inner">
+            
+            <form action="">
+              <h3>Formulario reserva</h3>
+      
+              <div class="form-gorup">
+                <input type="text" placeholder="Nombre y Apellido" class="form-control">
+              </div>
+              <div class="form-wrapper">
+                <input type="datetime" placeholder="Fecha y hora" class="form-control"/>
+              </div>
+              <div class="form-wrapper">
+                <input type="number" placeholder="Numero de comensales" class="form-control"/>
+              </div>
+              
+              <div class="form-wrapper">
+                <input type="text" placeholder="Comentarios" class="form-control"/>
+              </div>
+      
+              <button>Finallizar reserva</button>
+      
+            </form>
+            <div class="img-holder">
+              <img src="imgs/reserva-mesa.jpg" alt="image">
+            </div>
+          </div>
+        </div>
 </body>
 </html>
