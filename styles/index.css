@@ -80,3 +80,22 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
+
+
+
+img{
+  max-width: 100%;
+  
+}
+.wrapper{
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.imimg-holder{
+  width: 100%;
+}
+.form-group{
+display: flex;
+}
