@@ -85,17 +85,54 @@ ul.topnav li.right {float: right;}
 
 img{
   max-width: 100%;
-  
+  align-items: center;
+  padding-left: 200px;
+    
 }
 .wrapper{
-
+background-color: #f2e7af;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 .imimg-holder{
   width: 100%;
 }
 .form-group{
+
 display: flex;
+background-color: #04AA6D;
+width: 150px;
+margin: 10px;
+text-align: center;
+font-size: 20px;
+line-height: 75px;
+text-decoration: none;
+border: 2px solid black;
+
+}
+.form-group ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%; 
+}
+.form-group li {
+  flex: 1;
+}
+.form-group a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+footer{
+  background-color: #333;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+
 }
