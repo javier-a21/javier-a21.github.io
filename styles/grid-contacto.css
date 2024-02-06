@@ -46,9 +46,8 @@ li a {
     grid-template-areas:
         'header header header header header header'
         'texto texto texto texto texto texto'
-        'mapa mapa mapa mapa mapa mapa'
-        'footer footer footer footer footer footer';
-    grid-template-rows: auto auto auto 7vh; /* Utilizamos vh directamente */
+        'mapa mapa mapa mapa mapa mapa';
+    grid-template-rows: auto auto auto; /* Utilizamos vh directamente */
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
@@ -69,9 +68,8 @@ li a {
     .grid-container {
         grid-template-areas:
             'header header header header header header'
-            'texto texto texto mapa mapa mapa'
-            'footer footer footer footer footer footer';
-        grid-template-rows: auto auto 7vh; /* Utilizamos vh directamente */
+            'texto texto texto mapa mapa mapa';
+        grid-template-rows: auto auto; /* Utilizamos vh directamente */
     }
     
 }
