@@ -20,9 +20,9 @@ li a {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  ul.menu li a:hover:not(.active) {
     background-color: #c27e4d;
-  }
+}
   
   li a.active {
     color: #c27e4d;
