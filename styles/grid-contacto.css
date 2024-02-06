@@ -28,6 +28,12 @@ li a {
     color: #c27e4d;
     background-color: #632f0a;
   }
+  .mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .header { grid-area: header; }
 .texto { grid-area: texto; }
