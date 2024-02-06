@@ -20,8 +20,7 @@ ul.barnav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 30px 40px;
-    border: solid red 2px;
+    padding: 40px 80px;
     text-decoration: none;
 }
 
@@ -41,7 +40,7 @@ ul.barnav li a.active {
     background-color: #632f0a;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
     ul.barnav li {float: none;}
   
   }
