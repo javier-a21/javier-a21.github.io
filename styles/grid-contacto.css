@@ -69,7 +69,7 @@ li a {
         grid-template-areas:
             'header header header header header header'
             'texto texto texto mapa mapa mapa';
-        grid-template-rows: auto auto; /* Utilizamos vh directamente */
+        grid-template-rows: 10vh 87.2vh; /* Utilizamos vh directamente */
     }
     
 }
