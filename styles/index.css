@@ -88,7 +88,7 @@ ul.topnav li.right {float: right;}
 img{
   max-width: 100%;
   align-items: center;
-    
+  
 }
 .wrapper{
 background-color: #f2e7af;
@@ -102,11 +102,11 @@ background-color: #f2e7af;
   width: 100%;
 }
 .form-group{
-background-color: #04AA6D;
-width: 150px;
-margin: 10px;
+background-color: #e3910d;
+width: 1000px;
+margin: 0;
 text-align: center;
-font-size: 20px;
+font-size: 50px;
 line-height: 75px;
 text-decoration: none;
 border: 2px solid black;
@@ -118,6 +118,7 @@ border: 2px solid black;
   padding: 0;
   display: flex;
   width: 100%; 
+  
 }
 .form-group li {
   flex: 1;
@@ -126,6 +127,7 @@ border: 2px solid black;
 .form-group a {
   text-decoration: none;
   color: aliceblue;
+  
 }
 
 footer{
