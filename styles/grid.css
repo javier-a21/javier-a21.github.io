@@ -39,4 +39,11 @@ body {
         grid-template-rows: 7vh auto 7vh; /* Utilizamos vh directamente */
 
     }
+    .table-container {
+        max-height: 845px; /* ajusta este valor según tus necesidades */
+        overflow-y: auto;
+    }
+    .table-container table {
+        width: 100%;
+    }
 }
