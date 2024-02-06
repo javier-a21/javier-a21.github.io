@@ -1,39 +1,41 @@
 body {
-    margin: 0;
-    background-color: #f2e7af;
+  margin: 0;
+  background-color: #f2e7af;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 li {
-    float: right;
-  }
-  
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  ul.menu li a:hover:not(.active) {
-    background-color: #c27e4d;
+  float: right;
 }
   
-  li a.active {
-    color: #c27e4d;
-    background-color: #632f0a;
-  }
-  .mapa {
-    grid-area: mapa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 80px;
+  text-decoration: none;
+}
+  
+ul.menu li a:hover:not(.active) {
+  background-color: #c27e4d;
+}
+  
+li a.active {
+  color: #c27e4d;
+  background-color: #632f0a;
+}
+.mapa {
+  grid-area: mapa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto{
+color: white;
 }
 
 .header { grid-area: header; }
@@ -47,15 +49,15 @@ li a {
         'header header header header header header'
         'texto texto texto texto texto texto'
         'mapa mapa mapa mapa mapa mapa';
-    grid-template-rows: auto auto auto; /* Utilizamos vh directamente */
+    grid-template-rows: auto;
     gap: 10px;
-    background-color: #2196F3;
+    background-color: #f2e7af;
     padding: 10px;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(12, 1, 1, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -68,7 +70,7 @@ li a {
         grid-template-areas:
             'header header header header header header'
             'texto texto texto mapa mapa mapa';
-        grid-template-rows: 10vh 87.2vh; /* Utilizamos vh directamente */
+        grid-template-rows: auto;
     }
     
 }
