@@ -30,15 +30,26 @@ ul.form-menu{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
 }
 ul.form-menu li a{
   display: block;
-  color: #cac44f;
+  color: rgb(111, 125, 46);
   text-align: center;
   padding: 90px;
   text-decoration: none;
-  background-color: black;
+  background-color: #cac44f;
+}
+.img-holder {
+  grid-area: img-holder;
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción original */
+}
+
+#imgr {
+  max-width: 80%; /* Cambia el tamaño máximo de la imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción original */
+  display: block; /* Asegura que la imagen no tenga espacio adicional debajo de ella */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 .header { grid-area: header; }
@@ -54,16 +65,16 @@ ul.form-menu li a{
         'img-holder img-holder img-holder img-holder img-holder img-holder'
         'form form form form form form'
         'menus menus menus menus menus menus'
-        'footer footer footer footer footer mapa';
+        'footer footer footer footer footer footer';
     grid-template-rows: auto auto auto; /* Utilizamos vh directamente */
     gap: 10px;
-    background-color: #2196F3;
+    background-color: #f2e7af;
     padding: 10px;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(12, 1, 1, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
