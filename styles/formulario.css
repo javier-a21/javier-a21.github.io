@@ -1,21 +1,100 @@
-* {
+*{
   box-sizing: border-box;
 }
-
-.flex-container{ 
-    background-color: #f1f1f1;
-    width: 300px;
-    margin: 10px;
-    text-align: left;
-    line-height: 75px;
-    font-size: 30px;
+body{
+  font-family: Arial;
+  background-color: #f2e7af;
+  color: #333;
+  font-size: 13px;
+  margin: 0;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  foto{
-     
+input,button{
+  font-family: arial;
+  color: #333;
+  font-size: 14px;
+}
+h3{
+  margin: 0;
+}
+img{
+  max-width: 100%;
+}
+.wrapper{
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner{
+  padding:20px;
+  background: rgba(255, 255, 255, 0.858);
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+}
+.inner .image-holder{
+  width: 50%;
+}
+.inner form{
+  width: 50%;
+  padding-bottom: 50px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.inner h3{
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 28px;
+
+}
+.form-group{
+  display: flex;
+}
+.form-group input{
+  width:50%
+}
+
+.form-wrapper{
+  position: relative;
+}
+.form-control{
+  border:1px solid #333;
+  border: none;
+  border-bottom: 1px solid #333;
+  min-width: 200px;
+  width: 100%;
+  height: 30px;
+  padding-right: 0;
+  margin-bottom: 25px;
+
+}
+button{
+  border: none;
+  width: 164px;
+  height: 51px;
+  margin: auto;
+  margin-top: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0 ;
+  background: #333;
+  font-size: 15px;
+  color: white;
+}
+@media (max-width: 767px){
+  .inner{
+   display: block;
   }
 
+  .inner .form{
+    width: 100%;
+    
+    padding: 40px 0 30px;
+  }
+  button{
+    margin-top: 60px;
+  }
+}
