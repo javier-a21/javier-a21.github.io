@@ -2,6 +2,32 @@ body {
   margin: 0;
   background-color: #f2e7af;
 }
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+.menu {
+  flex-grow: 1; /* Hace que el menú ocupe todo el espacio restante */
+  text-align: right; /* Alinea el texto del menú a la derecha */
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu ul li {
+  float: right; /* Alinea los elementos del menú a la derecha */
+}
+
+.menu ul li a {
+  display: block;
+  padding: 20px 40px; /* Ajusta el padding según sea necesario */
+  text-decoration: none;
+  color: white;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -20,7 +46,7 @@ li a {
   text-decoration: none;
 }
   
-ul.menu li a:hover:not(.active) {
+ul.men li a:hover:not(.active) {
   background-color: #c27e4d;
 }
   
@@ -36,6 +62,13 @@ li a.active {
 }
 .texto{
 color: white;
+}
+.logo {
+  float: left; /* Alinea el logo a la izquierda */
+  margin-left: 10px;
+  margin-right: 20px; /* Ajusta el margen derecho para dejar espacio entre el logo y el menú */
+  width: 300px; /* Ancho deseado para el logo */
+  height: auto; /* Altura automática para mantener la proporción */
 }
 
 .header { grid-area: header; }
