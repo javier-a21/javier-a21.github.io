@@ -28,7 +28,6 @@ body {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    border: 1px solid #ccc; /* Añade un borde para mostrar el grid */
 }
 @media screen and (min-width: 1025px) {
     .grid-container {
