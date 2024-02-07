@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #f2e7af;
+    min-width: 600px;
 }
 .burger-checkbox {
     display: none; /* Oculta el input checkbox */
@@ -13,6 +14,7 @@ body {
 .menu {
     flex-grow: 1; /* Hace que el menú ocupe todo el espacio restante */
     text-align: right; /* Alinea el texto del menú a la derecha */
+    text-decoration: none;
 }
 
 table {
