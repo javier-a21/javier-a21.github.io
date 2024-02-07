@@ -2,6 +2,9 @@ body {
     margin: 0;
     background-color: #f2e7af;
 }
+.burger-checkbox {
+    display: none; /* Oculta el input checkbox */
+}
 .header {
     grid-area: header;
     display: flex;
@@ -12,22 +15,6 @@ body {
     text-align: right; /* Alinea el texto del menú a la derecha */
 }
 
-.menu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.menu ul li {
-    float: right; /* Alinea los elementos del menú a la derecha */
-}
-
-.menu ul li a {
-    display: block;
-    padding: 20px 40px; /* Ajusta el padding según sea necesario */
-    text-decoration: none;
-    color: white;
-}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -42,22 +29,7 @@ th {
     padding: 20px;
     text-decoration: underline;
 }
-ul.men {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-ul.men li {
-  float: right;
-}
-ul.men li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 40px 80px;
-  text-decoration: none;
-}
+
 ul.men li a:hover:not(.active) {
     background-color: #c27e4d;
 }
@@ -70,6 +42,20 @@ ul.men li a.active {
     margin-right: 20px; /* Ajusta el margen derecho para dejar espacio entre el logo y el menú */
     width: 300px; /* Ancho deseado para el logo */
     height: auto; /* Altura automática para mantener la proporción */
+}
+.burger-menu{
+    margin-right: 20px;
+    display: block;
+    float: right;
+    width: 40%;
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el ícono de la hamburguesa */
+}
+.burger-checkbox:checked + .menu .men {
+    display: block; /* Muestra el menú cuando el checkbox está marcado */
+}
+
+ul{
+    display: none;
 }
 
 .header { grid-area: header; }
@@ -116,4 +102,43 @@ ul.men li a.active {
     .table-container table {
         width: 100%;
     }
+    .burger-menu{
+        display: none;
+    }
+    
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu ul li {
+    float: right; /* Alinea los elementos del menú a la derecha */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 20px 40px; /* Ajusta el padding según sea necesario */
+    text-decoration: none;
+    color: white;
+}
+ul.men {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+ul.men li {
+  float: right;
+}
+ul.men li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 80px;
+  text-decoration: none;
+}
+ul{
+    display: block;
+}
 }
